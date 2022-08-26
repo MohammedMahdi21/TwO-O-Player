@@ -1,5 +1,6 @@
 class Game
-  def initialize
+
+  def initialize(player1, player2)
     @player1 = Player1
     @player2 = Player2
     @is_player1 = true
@@ -36,7 +37,9 @@ class Game
       else
         self.generate_question(@player2)
       end
-      puts "#{player1.name} #{player1.lives}/3 vs #{@player2.name} #{player2.lives}/3"
+      puts "#{player1.name} #{player1.lives}/3 vs #{player2.name} #{player2.lives}/3"
     end
   end
 end
+
+
