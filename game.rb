@@ -8,6 +8,7 @@ class Game
   end
 
   # Ask a question and check the answer
+  
   def generate_question(player) 
     num1 = rand(20)
     num2 = rand(20)
@@ -29,6 +30,7 @@ class Game
   end
 
   #Create the loop logic for the questions
+
   def start_game 
     puts " --- Game Start Now --- "
     while !@game_over
